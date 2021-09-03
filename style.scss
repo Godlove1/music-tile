@@ -1,0 +1,390 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+}
+main{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container-wrapper{
+	width: 100%;
+	height:100%;
+background: rgb(66, 161, 161);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.middle-container{
+	width: 100%;
+	height: 100%;
+	border-left: 1px solid #f5f8fc5d;
+	border-right: 1px solid #f5f8fc5d;
+	position: relative;
+	
+
+.player{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+top: 0;
+right: 0;
+
+.disc-turn{
+	width: 300px;
+	height: 100px;
+	border: 2px solid wheat;
+	border-radius: 20px;
+	margin: 50px 350px ;
+	
+
+	.dimg{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		img{
+			width: 55px;
+			animation: spin 60ms 3s infinite;
+
+			@keyframes spin {
+				0%{
+					transform: rotate(0);
+				}
+				100%{
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+}
+
+.playbut{
+	width: 200px;
+	height: 200px;
+	margin: 20px 900px;
+
+
+	img{
+		width: 45px;
+	}
+
+	}
+	.rewind{
+		font-size: 2.5em;
+		color: white;
+		border: 2px solid white;
+		padding: 10px;
+	}
+	.mute{
+		position: absolute;
+		bottom: 20px;
+		left: 200px;
+		width: 80px;
+		height: 80px;
+		border: 5px solid wheat;
+		border-radius: 50%;
+		display: grid;
+		place-items: center;
+		padding: 20px 25px;
+
+
+		img{
+			width: 45px;
+			height: 45px;
+
+		}
+	}
+}
+
+
+	.middle-wrapper{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		
+	}
+	.info-wrapper{
+		padding-left: 100px;
+		width: 65%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+position: relative;
+z-index: 2;
+
+		.artist-name{
+			padding: 5px;
+			color: #F5F8FC;
+
+.fname{
+	font-size: 15em;
+}
+
+h1{
+	font-size: 3em;
+	font-weight: 700;
+	margin-top: -50px;
+	letter-spacing: 40px;
+}
+		}
+
+		.about-artist{
+			padding: 0 50px 20px 15px ;
+			color: #F5F8FC;
+			font-size: 1.4em;
+			font-weight: 100;
+		}
+		.buttons{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+button{
+	width: 200px;
+	height: 40px;
+	border: none;
+}
+
+			.discover{
+				margin: 0 10px;
+				background: black;
+				color: white;
+				transition: background .5s ease-in;
+
+				&:hover{
+					background: #f1f1f1;
+					color: teal;
+				}
+			}
+
+			.view-show{
+				background: white;
+				color: teal;	
+				transition: background .5s ease-in;
+				
+				&:hover{
+					background: teal;
+					color: #f1f1f1;
+				}
+			}
+		}
+	}
+
+
+
+.artist-image{
+	width: 35%;
+	height: 100%;
+	position: relative;
+	margin-right: 100px;
+z-index: 2;
+
+
+img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+}
+
+.numba{
+	position: absolute;
+	font-size: 30rem;
+	font-weight: bold;
+	color: rgb(45, 131, 131);
+	z-index: 1;
+	top: 170px;
+	right: 320px;
+}
+
+}
+
+
+
+.left-container{
+width: 8%;
+height: 100%;
+display: flex;
+justify-content:space-between;
+align-items: center;
+flex-direction: column;
+
+.song-title{
+	width: 100%;
+	height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+	p{
+	writing-mode: vertical-rl;
+	text-orientation: sideways;
+	text-transform: capitalize;
+	font-size: 2em;
+	transform: rotate(-180deg);
+		color: #F5F8FC;
+	}
+}
+
+.social-media-icons{  
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	background: #f5f8fc7a;
+
+img{
+	width: 35px;
+	height: 35px;
+}
+}
+}
+
+
+
+.right-container{
+	width: 8%;
+	height: 100%;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+flex-direction: column;
+background: #f5f8fc7a;
+
+.menu-icon{
+	width: 100%;
+	border-bottom: 1px solid #f5f8fc5d;
+	img{
+		width: 30px;
+		padding: 10px 0;
+	}
+}
+.view-all{
+	width: 100%;
+	margin: 20px 0;
+	display: grid;
+	place-items: center;
+	font-size: 2em;
+	color: #F5F8FC;
+
+	p{
+		writing-mode: vertical-lr;
+	text-orientation: sideways;
+	}
+}
+
+.art-number{
+	position: relative;
+	z-index: 3;
+	width: 45px;
+	height: 45px;
+	border: 3px solid #f1f1f1;
+	margin: 20px 0;
+	border-radius: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+	color: #F5F8FC;
+	&:hover{
+		background-color: #f1f1f1;
+		color: teal;
+	}
+}
+#two{
+	color: teal;
+	background-color: white;
+}
+}
+
+.header-banner{
+	position: absolute;
+	text-transform: uppercase;
+	width: 400px;
+	height: 50px;
+	top: 0;
+	color: teal;
+	background: #F5F8FC;
+	display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2em;
+}
+.next-art{
+	position: absolute;
+	width: 250px;
+	height: 150px;
+	right: 0;
+	background: black;
+	bottom: 0;
+	z-index: 2;
+
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}
+.next-info{
+	position: absolute;
+	width: 320px;
+	height: 80px;
+	right: 250px;
+	background: #F5F8FC;
+	bottom: 0;
+	padding: 15px;
+	z-index: 2;
+
+	.next-show{
+		color: teal;
+		font-size: 2em;
+	}
+	.nme{
+		color: black;
+		font-weight: bold;
+		font-size: 1em;
+	}
+}
+
+
+
+
+
+
+
+
+
+.note{
+	display: none;
+}
+@media (min-width:300px) and (max-width:799px) {
+	main{
+		display: none;
+	}
+	.note{
+		width: 100%;
+		height: 100%;
+	display: grid;
+	place-items: center;
+	}
+}
