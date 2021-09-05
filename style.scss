@@ -373,18 +373,20 @@ font-size: 2em;
 
 
 
-
 .note{
 	display: none;
 }
-@media (min-width:300px) and (max-width:799px) {
+@media (max-width:800px){
 	main{
 		display: none;
 	}
 	.note{
 		width: 100%;
+		font-size: 2em;
+		text-transform: capitalize;
 		height: 100%;
-	display: grid;
-	place-items: center;
+		display: block;
+		display: grid;
+		place-items: center;
 	}
 }
